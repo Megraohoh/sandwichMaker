@@ -10,9 +10,7 @@
 -condiments
 -veggies
 
-##Your project should have one HTML file that has:
-
--a section of options for each sandwich part
+####Your project should have one HTML file that has a section of options for each sandwich part
 the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat")
 
 -an empty DOM element into which the final sandwich order and its cost will be inserted

@@ -4,9 +4,40 @@
 	<title>Eat This, IIFE</title>
 </head>	
 <body>
+
+<!-- section of options for each sandwich part the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat")-->	
 	<fieldset>
-		<textarea type="text" name="textarea"></textarea>
-		<button name="button">Click me</button>
+		<Legend>Make your sandwich:</Legend>
+
+		<label>Bread</label>
+		<input type="radio" id="bread" name="bread">wheat
+		<input type="radio" id="bread" name="bread">white
+		<input type="radio" id="bread" name="bread">no bread
+		<br>
+		<label>Meat</label>
+		<input type="radio" id="meat" name="meat">turkey
+		<input type="radio" id="meat" name="meat">chicken
+		<input type="radio" id="meat" name="meat">no meat
+		<br>
+		<label>Cheese</label>
+		<input type="radio" id="cheese" name="cheese">provolone
+		<input type="radio" id="cheese" name="cheese">swiss
+		<input type="radio" id="cheese" name="cheese">no cheese
+		<br>
+		<label>Condiments</label>
+		<input type="radio" id="condiments" name="condiments">mayo
+		<input type="radio" id="condiments" name="condiments">honey mustard
+		<input type="radio" id="condiments" name="condiments">no condiments
+		<br>
+		<label>Vegetables</label>
+		<input type="radio" id="vegetables" name="vegetables">lettuce
+		<input type="radio" id="vegetables" name="vegetables">tomato
+		<input type="radio" id="vegetables" name="vegetables">no vegetables
+
+<!-- an empty DOM element into which the final sandwich order and its cost will be inserted-->
+		<div id="sandwichHolder"></div>
+
+
 	</fieldset>
 	<script type="text/javascript" src="main.js"></script>
 </body>
