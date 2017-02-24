@@ -2,7 +2,7 @@
 var SandwichMaker = (function(maker) {
 
   // Private variable to store the different meat prices
-  var vegetablesPrices;
+  var vegetablesPrices = {"lettuce": 0.10, "tomato": 0.10, "no vegetables", 0};
 
   // Augment the original object with another method
   maker.addVegetables = function() {
