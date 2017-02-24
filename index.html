@@ -9,30 +9,38 @@
 	<fieldset>
 		<Legend>Make your sandwich:</Legend>
 
-		<label>Bread</label>
-		<input type="radio" id="bread" name="bread">wheat
-		<input type="radio" id="bread" name="bread">white
-		<input type="radio" id="bread" name="bread">no bread
+		<label id="breadChoice">Bread</label>
+		<input type="checkbox" id="bread1" name="wheat">wheat
+		<input type="checkbox" id="bread2" name="white">white
+		<input type="checkbox" id="bread3" name="no bread">no bread
+
 		<br>
-		<label>Meat</label>
-		<input type="radio" id="meat" name="meat">turkey
-		<input type="radio" id="meat" name="meat">chicken
-		<input type="radio" id="meat" name="meat">no meat
+
+		<label id="meatChoice">Meat</label>
+		<input type="checkbox" id="meat1" name="turkey">turkey
+		<input type="checkbox" id="meat2" name="chicken">chicken
+		<input type="checkbox" id="meat3" name="no meat">no meat
+
 		<br>
-		<label>Cheese</label>
-		<input type="radio" id="cheese" name="cheese">provolone
-		<input type="radio" id="cheese" name="cheese">swiss
-		<input type="radio" id="cheese" name="cheese">no cheese
+
+		<label id="cheeseChoice">Cheese</label>
+		<input type="checkbox" id="cheese1" name="provolone">provolone
+		<input type="checkbox" id="cheese2" name="swiss">swiss
+		<input type="checkbox" id="cheese3" name="no cheese">no cheese
+
 		<br>
-		<label>Condiments</label>
-		<input type="radio" id="condiments" name="condiments">mayo
-		<input type="radio" id="condiments" name="condiments">honey mustard
-		<input type="radio" id="condiments" name="condiments">no condiments
+
+		<label id="condimentsChoice">Condiments</label>
+		<input type="checkbox" id="condiments1" name="mayo">mayo
+		<input type="checkbox" id="condiments2" name="honey mustard">honey mustard
+		<input type="checkbox" id="condiments3" name="no condiments">no condiments
+
 		<br>
-		<label>Vegetables</label>
-		<input type="radio" id="vegetables" name="vegetables">lettuce
-		<input type="radio" id="vegetables" name="vegetables">tomato
-		<input type="radio" id="vegetables" name="vegetables">no vegetables
+
+		<label id="vegetablesChoice">Vegetables</label>
+		<input type="checkbox" id="vegetables1" name="lettuce">lettuce
+		<input type="checkbox" id="vegetables2" name="tomato">tomato
+		<input type="checkbox" id="vegetables3" name="no vegetables">no vegetables
 
 <!-- an empty DOM element into which the final sandwich order and its cost will be inserted-->
 		<div id="sandwichHolder"></div>
