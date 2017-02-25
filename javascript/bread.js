@@ -9,7 +9,7 @@ var SandwichMaker = (function(maker) {
   
   };
   
-  maker.setBread = function() {	
+  maker.getBread = function() {	
     return ;
   };
 
