@@ -49,6 +49,7 @@ cheeseChooser.addEventListener("change", function(event){
 
 // ******CONDIMENTS SELECTION TO DOM******
 
+
 var condimentsChooser = document.getElementById("condimentsChoice");
 var sandwichHolder = document.getElementById("sandwichHolder");
 
@@ -65,6 +66,7 @@ condimentsChooser.addEventListener("change", function(event){
 // ******VEGETABLES SELECTION TO DOM******
 
 
+
 var vegetablesChooser = document.getElementById("vegetablesChoice");
 var sandwichHolder = document.getElementById("sandwichHolder");
 
@@ -77,14 +79,45 @@ vegetablesChooser.addEventListener("change", function(event){
 })
 
 
+//*****BUTTON*****
+
+var runButton = document.getElementById("btn");
+runButton.addEventListener("click", function(){
+	var finalSandwichTotal = SandwichMaker.getTotalPrice();
+	document.getElementById("sandwichHolder").innerHtml = "Sandwich Total: $" + finalSandwichTotal;
+})
 
 
-  // Get the value chosen from the DOM
-  // selectedTopping = event.target.value;
 
-  // breadChoice = event.target.value;
 
-  // Determine the price of the topping chosen
 
-  // Add the topping to the SandwichMaker to increase the total price
-// });
+
+//*****IF STATEMENT*****
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
