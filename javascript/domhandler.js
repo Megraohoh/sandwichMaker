@@ -1,16 +1,23 @@
-// ******BREAD SELECTION TO DOM******
+var selectedTopping;
 
+var finalSandwichTotal = 0;
+
+
+// ******BREAD SELECTION TO DOM******
 
 var breadChooser = document.getElementById("breadChoice");
 var sandwichHolder = document.getElementById("sandwichHolder");
 
 breadChooser.addEventListener("change", function(event) { //change event says which was selected
-	var whichBread = SandwichMaker.addBread(event.target.value);
-	// console.log(whichBread);
-
-	SandwichMaker.setTotalPrice(whichBread);
-	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();
-})
+	// var whichBread = SandwichMaker.addBread(event.target.value);
+	selectedTopping = event.target.value;
+	var toppingPrice = SandwichMaker.addBread(selectedTopping); 
+	if (event.target.checked === true) { //checked bc of the checkbox is checked :P
+	SandwichMaker.setTotalPrice(toppingPrice);
+	} else {
+		SandwichMaker.removeTopping(toppingPrice);
+	}
+});
 
 
 
@@ -22,7 +29,7 @@ var sandwichHolder = document.getElementById("sandwichHolder");
 
 meatChooser.addEventListener("change", function(event) {
 	var whichMeat = SandwichMaker.addMeat(event.target.value);
-		// console.log(whichMeat);
+		
 
 	SandwichMaker.setTotalPrice(whichMeat);
 	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
@@ -39,8 +46,7 @@ var sandwichHolder = document.getElementById("sandwichHolder");
 
 cheeseChooser.addEventListener("change", function(event){
 	var whichCheese = SandwichMaker.addCheese(event.target.value);
-		// console.log(whichCheese);
-
+		
 	SandwichMaker.setTotalPrice(whichCheese);
 	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
 })
@@ -55,7 +61,7 @@ var sandwichHolder = document.getElementById("sandwichHolder");
 
 condimentsChooser.addEventListener("change", function(event){
 	var whichCondiment = SandwichMaker.addCondiments(event.target.value);
-		// console.log(whichCondiment);
+		
 
 	SandwichMaker.setTotalPrice(whichCondiment);
 	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
@@ -72,7 +78,7 @@ var sandwichHolder = document.getElementById("sandwichHolder");
 
 vegetablesChooser.addEventListener("change", function(event){
 	var whichVegetable = SandwichMaker.addVegetables(event.target.value);
-		// console.log(whichVegetable);
+		
 
 	SandwichMaker.setTotalPrice(whichVegetable);
 	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
@@ -84,40 +90,6 @@ vegetablesChooser.addEventListener("change", function(event){
 var runButton = document.getElementById("btn");
 runButton.addEventListener("click", function(){
 	var finalSandwichTotal = SandwichMaker.getTotalPrice();
-	document.getElementById("sandwichHolder").innerHtml = "Sandwich Total: $" + finalSandwichTotal;
+	document.getElementById("sandwichHolder").innerHTML = "Sandwich Total: $" + finalSandwichTotal;
 })
-
-
-
-
-
-
-//*****IF STATEMENT*****
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

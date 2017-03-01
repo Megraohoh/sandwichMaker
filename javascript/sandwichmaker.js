@@ -10,8 +10,13 @@ var SandwichMaker = (function() {
 
       },
 
+    removeTopping: function(toppingPrice) {
+    	totalPrice -= toppingPrice;
+      },  
+
     setTotalPrice: function(toppingPrice) {
     	totalPrice += toppingPrice;
+    	return totalPrice
       }  
   
   };
