@@ -28,12 +28,18 @@ var meatChooser = document.getElementById("meatChoice");
 var sandwichHolder = document.getElementById("sandwichHolder");
 
 meatChooser.addEventListener("change", function(event) {
-	var whichMeat = SandwichMaker.addMeat(event.target.value);
-		
+	selectedTopping = event.target.value;
+	var toppingPrice = SandwichMaker.addMeat(selectedTopping);
+	if (event.target.checked === true) { 
+	SandwichMaker.setTotalPrice(toppingPrice);
+	} else {
+		SandwichMaker.removeTopping(toppingPrice);
+	}
+});	
+	// var whichMeat = SandwichMaker.addMeat(event.target.value);
+	// SandwichMaker.setTotalPrice(whichMeat);
+	// sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
 
-	SandwichMaker.setTotalPrice(whichMeat);
-	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
-})
 
 
 
@@ -45,11 +51,18 @@ var cheeseChooser = document.getElementById("cheeseChoice");
 var sandwichHolder = document.getElementById("sandwichHolder");
 
 cheeseChooser.addEventListener("change", function(event){
-	var whichCheese = SandwichMaker.addCheese(event.target.value);
-		
-	SandwichMaker.setTotalPrice(whichCheese);
-	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
-})
+		selectedTopping = event.target.value;
+	var toppingPrice = SandwichMaker.addCheese(selectedTopping);
+	if (event.target.checked === true) { 
+	SandwichMaker.setTotalPrice(toppingPrice);
+	} else {
+		SandwichMaker.removeTopping(toppingPrice);
+	}
+});	
+	// var whichCheese = SandwichMaker.addCheese(event.target.value);	
+	// SandwichMaker.setTotalPrice(whichCheese);
+	// sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
+
 
 
 
@@ -60,13 +73,20 @@ var condimentsChooser = document.getElementById("condimentsChoice");
 var sandwichHolder = document.getElementById("sandwichHolder");
 
 condimentsChooser.addEventListener("change", function(event){
-	var whichCondiment = SandwichMaker.addCondiments(event.target.value);
+		selectedTopping = event.target.value;
+	var toppingPrice = SandwichMaker.addCondiments(selectedTopping);
+	if (event.target.checked === true) { 
+	SandwichMaker.setTotalPrice(toppingPrice);
+	} else {
+		SandwichMaker.removeTopping(toppingPrice);
+	}
+});	
 		
 
-	SandwichMaker.setTotalPrice(whichCondiment);
-	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
+	// var whichCondiment = SandwichMaker.addCondiments(event.target.value);
+	// SandwichMaker.setTotalPrice(whichCondiment);
+	// sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
 
-})
 
 
 // ******VEGETABLES SELECTION TO DOM******
@@ -77,12 +97,19 @@ var vegetablesChooser = document.getElementById("vegetablesChoice");
 var sandwichHolder = document.getElementById("sandwichHolder");
 
 vegetablesChooser.addEventListener("change", function(event){
-	var whichVegetable = SandwichMaker.addVegetables(event.target.value);
-		
 
-	SandwichMaker.setTotalPrice(whichVegetable);
-	sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
-})
+		selectedTopping = event.target.value;
+	var toppingPrice = SandwichMaker.addVegetables(selectedTopping);
+	if (event.target.checked === true) { 
+	SandwichMaker.setTotalPrice(toppingPrice);
+	} else {
+		SandwichMaker.removeTopping(toppingPrice);
+	}
+});	
+	// var whichVegetable = SandwichMaker.addVegetables(event.target.value);
+	// SandwichMaker.setTotalPrice(whichVegetable);
+	// sandwichHolder.innerHTML = SandwichMaker.getTotalPrice();	
+
 
 
 //*****BUTTON*****
