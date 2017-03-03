@@ -17,4 +17,5 @@
 
 1.Follow GitHub instructions on cloning project and run on personal server. No special instructions.
 
-<!-- ###MVP Image -->
+###MVP Image
+![sandwich maker](https://raw.githubusercontent.com/Megraohoh/sandwichMaker/sandwichindex/screenshots/Screen%20Shot%202017-03-02%20at%207.25.03%20PM.png)
