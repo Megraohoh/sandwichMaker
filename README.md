@@ -1,28 +1,21 @@
 #IIFE Sandwich Maker
 
-###Instructions
+##Create an example of a selection menu with button to view sandwich total in DOM
 
-####Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Create a Sandwich module, then create the following as individual modules, using IIFE syntax, to augment Sandwich:
+*One HTML file
+*A JavaScript file to view main variables
+*A JavaScript file to handle DOM elements and functions
+*Separate JavaScript files to augment main functions in sandwichmaker.js
 
--bread
--meat
--cheese
--condiments
--veggies
+##Technologies Used
 
-##Your project should have one HTML file that has:
+*HTML
+*JavaScript
 
--a section of options for each sandwich part
-the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat")
 
--an empty DOM element into which the final sandwich order and its cost will be inserted
+###How to recreate project:
 
--The ingredient choices should be stored as JS objects that contain the ingredients as keys and their cost as the value. {"turkey": 0.90, "bacon": 1.50}
+Follow GitHub instructions on cloning project and run on personal server. No special instructions.
 
--Make sure the ingredient objects cannot be accessed by the other modules except through an accessor (getter) method.
-
--Each IIFE should expose, in its public interface, a method named add{ingredient} (e.g. addMeat or addVeggies) that accepts a single argument. That argument's value should be the ingredient selected by the user.
-
--You should also create an additional JavaScript file that handles interacting with the form elements and determining which method should be called.
-
--Don't worry about exposing the prices to the user until you display the final cost. This is just an exercise, not a business model.
+###MVP Image
+![sandwich maker](https://raw.githubusercontent.com/Megraohoh/sandwichMaker/sandwichindex/screenshots/Screen%20Shot%202017-03-02%20at%207.25.03%20PM.png)

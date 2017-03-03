@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eat This, IIFE</title>
+</head>	
+<body>
+
+<!-- section of options for each sandwich part the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat")-->	
+	<fieldset>
+		<Legend>Make your sandwich:</Legend>
+
+		<div id="breadChoice">
+
+		<label >Bread</label>
+		<input type="checkbox" value="wheat" name="wheat">wheat
+		<input type="checkbox" value="white" name="white">white
+		<input type="checkbox" value="no bread" name="no bread">no bread
+
+		</div>
+
+		<br>
+
+		<div id="meatChoice">
+
+		<label >Meat</label>
+		<input type="checkbox" value="turkey" name="turkey">turkey
+		<input type="checkbox" value="chicken" name="chicken">chicken
+		<input type="checkbox" value="no meat" name="no meat">no meat
+
+		</div>
+
+		<br>
+
+		<div id="cheeseChoice">
+
+		<label >Cheese</label>
+		<input type="checkbox" value="provolone" name="provolone">provolone
+		<input type="checkbox" value="swiss" name="swiss">swiss
+		<input type="checkbox" value="no cheese" name="no cheese">no cheese
+
+		</div>
+
+		<br>
+
+		<div id="condimentsChoice">
+
+		<label >Condiments</label>
+		<input type="checkbox" value="mayo" name="mayo">mayo
+		<input type="checkbox" value="honey mustard" name="honey mustard">honey mustard
+		<input type="checkbox" value="no condiments" name="no condiments">no condiments
+
+		</div>
+
+		<br>
+
+		<div id="vegetablesChoice">
+
+		<label>Vegetables</label>
+		<input type="checkbox" value="lettuce" name="lettuce">lettuce
+		<input type="checkbox" value="tomato" name="tomato">tomato
+		<input type="checkbox" value="no vegetables" name="no vegetables">no vegetables
+
+		</div>
+
+	</fieldset>	
+
+	<button id="btn">Click Here for Your Total</button>
+	<div></div>
+	<div id="sandwichHolder"></div>
+
+
+	
+	<script type="text/javascript" src="javascript/sandwichmaker.js"></script>
+	<script type="text/javascript" src="javascript/bread.js"></script>
+	<script type="text/javascript" src="javascript/meat.js"></script>
+	<script type="text/javascript" src="javascript/cheese.js"></script>
+	<script type="text/javascript" src="javascript/condiments.js"></script>
+	<script type="text/javascript" src="javascript/vegetables.js"></script>
+	<script type="text/javascript" src="javascript/domhandler.js"></script>
+	
+</body>
+</html>
